@@ -23,8 +23,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="/services.html">Plans</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-
-                <li><a href="#" class="button-link">General Enquiries</a></li>
+                <li><a href="/contact.html" class="button-link">General Enquiries</a></li>
             </ul>
         </div>
         <div class="nav-contact">
@@ -43,7 +42,7 @@
 
     <div class="hero">
         <div class="hero-section">
-            <h6>Makola funerals</h6>
+            <h6><span>Makola Funerals</span></h6>
             <h1>Dignified farewell, with plans from as little as R140 per month for 11 family members.</h1>
             <p>We ensure that every farewell is marked with the respect and honor it deserves. Our comprehensive
                 coverage not only eases financial burdens but also preserves cherished memories, allowing loved ones to
@@ -56,19 +55,18 @@
     <section class="save-section">
         <div class="save">
             <h1>Need affordable funeral cover for you or your family?</h1>
-            <a href="/contact.html" class="contact-btn">Contact us</a>
+            <a href="/contact.html" >Contact us</a>
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="left-about">
             <img src="./images/carback.jpg" alt="makola car">
             <div class="yellow-box">
-
             </div>
         </div>
         <div class="about-content">
-            <p class="makola-p">makola funerals</p>
+            <p class="makola-p">Makola Funerals</p>
             <h2>About us</h2>
             <p>Makola Funerals is committed to providing dignified and affordable funeral services. With years of
                 experience, we understand the importance of honoring loved ones with respect and compassion. Our mission
@@ -78,6 +76,11 @@
                 and respect. We offer a range of funeral plans to suit your needs, from basic to comprehensive cover,
                 and we are committed to providing personalized support and care to each family we serve. Whether you are
                 planning ahead or need immediate assistance, we are here to help.</p>
+        </div>
+        <div class="small-about">
+            <img src="./images/carback.jpg" alt="makola car">
+            <div class="yellow-box">
+            </div>
         </div>
     </section>
 
@@ -95,7 +98,6 @@
                     <li>Traditional burial ceremonies</li>
                     <li>Casket options</li>
                     <li>Grave site preparation</li>
-                    <!-- Add more bullet points as needed -->
                 </ul>
                 <a href="/services.html" class="btn">See more</a>
             </div>
@@ -113,7 +115,7 @@
             </div>
         </section>
     </div>
-    <div class="gallery-section" id="gallery"> 
+    <div class="gallery-section" id="gallery">
         <div>
             <h1>Gallery</h1>
             <div class="underline" style="width: 90%; margin: 8px;"></div>
@@ -127,12 +129,8 @@
             <img src="./images/DSCF1225.JPG" alt="">
         </div>
     </div>
-
-
     <main>
-
     </main>
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -140,16 +138,15 @@
                 <h2>Contact Us</h2>
                 <p><i class="far fa-envelope"></i>Email: admin@makolafunerals.co.za</p>
                 <p><i class="fas fa-phone"></i>Phone: 083 423 6770</p>
-                <p><i class="fas fa-map-marker-alt"></i>Stand No 1286, Ga-Phaahla,Siyabuswa,0472</p>
+                <p><i class="fas fa-map-marker-alt"></i>Siyabuswa, South Africa</p>
             </div>
             <div class="footer-section">
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="/services.html">Services</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -163,6 +160,9 @@
                     <li><a href="https://www.tiktok.com/@makolafunerals?_t=8ln7iL76TQc&_r=1" target="_blank"><i
                                 class="fab fa-tiktok"></i></a>
                     </li>
+                    <li><a href="https://twitter.com/Makolafunerals?t=5MGaLAFrUPN7wHl1ZtXAXw&s=09" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -170,9 +170,16 @@
             <p>&copy; 2024 Makola Funerals. All rights reserved.</p>
         </div>
     </footer>
+    
 
     <script src="https://kit.fontawesome.com/0dc0e0665a.js" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script>
+        function toggleNav() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>

@@ -67,6 +67,98 @@
         .services-p {
             margin-top: 1rem;
         }
+
+        .accordion-header {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin: 0;
+            cursor: pointer;
+            font-size: xx-small;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-header span i {
+            font-size: medium;
+        }
+
+        @media (max-width: 800px) {
+            .services-hd{
+                font-size: large;
+            }
+
+            .services-p{
+                font-size: small;
+            }
+
+            .service-cards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                padding: 0;
+            }
+
+            .card{
+                width: 80%;
+            }
+
+            .card h3{
+                font-size: large;
+            }
+
+            .services{
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+            }
+
+            .flexible-services{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .services-hd{
+                font-size: large;
+            }
+
+            .services-p{
+                font-size: small;
+            }
+
+            .service-cards{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                padding: 0;
+            }
+
+            .card{
+                width: 80%;
+            }
+
+            .card h3{
+                font-size: large;
+            }
+
+            .services{
+                height: fit-content;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .flexible-services{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 
@@ -80,8 +172,8 @@
         <div class="nav-links">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="/index.html">About</a></li>
-                <li><a href="/index.html">Gallery</a></li>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#gallery">Gallery</a></li>
                 <li><a href="/contact.html" class="button-link">General Enquiries</a></li>
             </ul>
         </div>
@@ -99,7 +191,7 @@
 
     <div class="hero">
         <div class="hero-section">
-            <h6>Makola funerals</h6>
+            <h6><span>Makola Funerals</span></h6>
             <h1>Burial & Funeral Plans</h1>
         </div>
     </div>
@@ -108,125 +200,159 @@
         <h1 class="services-hd">Funeral Cover Plans</h1>
         <div class="underline" style="margin-left: 3rem; width: 15%;"></div>
         <p class="services-p">
-            ID Copies & Birth Certificates for beneficiaries, we qualify for only 11 Members with 3 months waiting
-            period.<br>
-            All Plans Includes 5x 10 meters tent & 50 chairs.
+         
         </p>
     </div>
     <div class="services">
         <div class="service-cards">
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan A</h3>
                 <div class="underline"></div>
-                <p class="reg-fee">Registration fee: <span>R140.00</span></p>
+                <p class="reg-fee">Monthly fee: <span>R140.00</span></p>
                 <ul>
+                    <li>Chairs x 50 and Tent x 10 meters </li>
                     <li>Cooling </li>
-                    <li>Hearse & family car </li>
-                    <li>Coffin & Small wreath </li>
-                    <li>Name Plate & 50 copies of programmes </li>
-                    <li>4 types of vegetables </li>
-                    <li>50kg Maize meal </li>
-                    <li>12.5kg Sugar & flour </li>
-                    <li>10 X 500g Rama and 500g Baking powder </li>
-                    <li>4L Cooking Oil & 500g Joko tea </li>
-                    <li>6 X 2kg Braai Pack & 10kg Mala Mogodu </li>
+                    <li>Coffin and Small Wreath </li>
+                    <li>Hearse and Family Car </li>
+                    <li>Name Plate and 50 Copies of Programmes</li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Braai Pack 2kg x 6 and Mala Mogodu 10kg</li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Maize Meal 50kg</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan B</h3>
                 <div class="underline"></div>
-                <p class="reg-fee">Registration fee: <span>R150.00</span></p>
+                <p class="reg-fee">Monthly fee: <span>R150.00</span></p>
                 <ul>
-                    <li>Hearse & family car </li>
-                    <li>Coffin & Small wreath </li>
-                    <li>Name Plate & 50 copies off programmes</li>
-                    <li>4 types of vegetables </li>
-                    <li>50kg Maize meal </li>
-                    <li>12.5kg Sugar and flour </li>
-                    <li>10x 500g Rama & 500g Baking powder </li>
-                    <li>4L Cooking oil & 500g Joko tea </li>
-                    <li>6X 2kg Braai Pack & 10kg Mala Mogodu </li>
                     <li>Bus </li>
-                    <!-- Add more bullet points as needed -->
+                    <li>Chairs x 50 and Tent x 10 meters</li>
+                    <li>Cooling</li>
+                    <li>Coffin and Small Wreath </li>
+                    <li>Hearse and Family Car </li>
+                    <li>Name Plate and 50 Copies of Programmes</li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Braai Pack 2kg x 6 and Mala Mogodu 10kg</li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Maize Meal 50kg</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan C</h3>
                 <div class="underline"></div>
-                <p class="reg-fee">Registration fee: <span>R170.00</span></p>
+                <p class="reg-fee">Monthly fee: <span>R170.00</span></p>
                 <ul>
-                    <li>Hearse & family car </li>
-                    <li>Coffin & Small wreath </li>
-                    <li>Name Plate & 50 copies of programmes </li>
-                    <li>4 Types of vegetables </li>
-                    <li>50kg Maize meal </li>
-                    <li>12.5kg Sugar & flour </li>
-                    <li>10X 500g Rama & 500g Baking Powder </li>
-                    <li>4L Cooking Oil & 500g Joko tea </li>
-                    <li>6X 2kg Braai Pack & 10kg Mala Mogodu </li>
                     <li>Catering </li>
+                    <li>Chairs x 50 and Tent x 10 meters</li>
+                    <li>Cooling</li>
+                    <li>Coffin and Small Wreath </li>
+                    <li>Hearse and Family Car </li>
+                    <li>Name Plate and 50 Copies of Programmes</li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Braai Pack 2kg x 6 and Mala Mogodu 10kg</li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Maize Meal 50kg</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan D</h3>
                 <div class="underline"></div>
-                <p class="reg-fee">Registration fee: <span>R180.00</span></p>
+                <p class="reg-fee">Monthly fee: <span>R170.00</span></p>
                 <ul>
-                    <li>Cooling </li>
-                    <li>Hearse & family car </li>
-                    <li>Coffin & Small wreath </li>
-                    <li>Name Plate & 50 copies of programmes </li>
-                    <li>4 Types of vegetables </li>
-                    <li>50kg Maize Meal </li>
-                    <li>12.5kg Sugar & flour </li>
-                    <li>10X 500g Rama & 500g Baking powder </li>
-                    <li>4L Cooking oil & 500G Joko tea </li>
-                    <li>6X 2kg Braai Pack & 10kg Mala Mogodu </li>
-                    <li>Both Catering & Bus </li>
+                    <li>Bus</li>
+                    <li>Catering </li>
+                    <li>Chairs x 50 and Tent x 10 meters</li>
+                    <li>Cooling</li>
+                    <li>Coffin and Small Wreath </li>
+                    <li>Hearse and Family Car </li>
+                    <li>Name Plate and 50 Copies of Programmes</li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Braai Pack 2kg x 6 and Mala Mogodu 10kg</li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Maize Meal 50kg</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div>
-        <h1 class="services-hd">Flat Casket Plan</h1>
+        <h1 class="services-hd">Premium Plan</h1>
         <div class="underline" style="margin-left: 3rem; width: 15%;"></div>
         <p class="services-p">
-            For Funeral services only.
-            No Funeral, No Benefits.
-            Plans that include Cashback will remain the same without change.
-            <br>
-            R350.00 Monthly, with a No Cashback Policy.
+            Montly fee of only R350
         </p>
     </div>
 
     <div class="flat-casket">
-        <img src="./images/DSCF1232.JPG" alt="casket">
+        <img src="./images/car.jpg" alt="casket">
         <div class="flat-casket-info">
             <h4>Plan includes</h4>
             <ul>
                 <li>Bus service is only at the Main Member stand number/physical address.</li>
                 <li>Catering, only at the Main Members physical address.</li>
                 <li>Full grocery.</li>
-                <li>Three Months waiting period for funeral service.</li>
-                <li>6 Months waiting period for TLB.</li>
+                <li>Fresh Flowers (Wreath)</li>
+                <li>Three Months Waiting Period for Funeral Service</li>
+                <li>6 Months Waiting Period for TLB.</li>
                 <li>Cash payment is accepted for TLB.</li>
-                <li>Local being R1200.00 cash.</li>
+                <li>Local being R1200.00 cash. </li>
                 <li>Outside of local is negotiable. </li>
-                <li>Two family cars i.e. BMW X6</li>
-                <li>Coffin trailer.</li>
-                <li>TLB for people who reside locally.</li>
+                <li>Two family Cars i.e. BMW X6</li>
+                <li>Coffin Trailer.</li>
+                <li>TLB for people who reside locally. </li>
                 <li>TLB for people who do not reside locally is negotiable. </li>
-                <li>5 x10meters tent & 50 chairs.</li>
-                <li>100 Copies of programs.</li>
-                <li>Large Fresh Flowers (wreath)</li>
-                <li>Caskets are only for adults only and children over 5 years old.</li>
-                <li>Plan is for 11 members only</li>
+                <li>Caskets are only for Adults only and Children over 5 years old.</li>
+                <li>Plan covers 11 Members only</li>
             </ul>
         </div>
     </div>
@@ -235,19 +361,17 @@
         <h1 class="services-hd">Group Society Plans</h1>
         <div class="underline" style="margin-left: 3rem; width: 15%;"></div>
         <p class="services-p">
-            Joining fee is R1000.00 non-refundable.
-            R2000.00 Transport fee per annum. 
-            R1000.00 Doctor&apos;s fee per annum. 
-            All Plans include 5x 10meters tents and 50 chairs.
-            Fees only paid when there&apos;s services. 
-            <br>
-            TLB R900.00 on top of services. 
+            Joining fee is R1000.00 non-refundable.<br>
+            R2000.00 Transport fee per annum.<br>
+            R1000.00 Doctor&apos;s fee per annum.<br>
+            All Plans include 5x 10meters tents and 50 chairs.<br>
+            Fees only paid when there&apos;s services.<br>
+            TLB R900.00 on top of services.
         </p>
     </div>
     <div class="services">
         <div class="service-cards">
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan A</h3>
                 <div class="underline"></div>
                 <p class="reg-fee"><span>R4800.00</span></p>
@@ -260,7 +384,6 @@
                 </ul>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan B</h3>
                 <div class="underline"></div>
                 <p class="reg-fee"><span>R5800.00</span></p>
@@ -274,108 +397,156 @@
                 </ul>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan C</h3>
                 <div class="underline"></div>
-                <p class="reg-fee"><span>R6800.00</span><br>Plan A & B plus the following: </p>
+                <p class="reg-fee"><span>R6800.00</span></p>
                 <ul>
-                    <li>4 Types of vegetables </li>
-                    <li>1x 12kg Sugar and flour  </li>
-                    <li>10x 500g Rama and 500g Joko Tea </li>
-                    <li>1X500G Baking Powder & 4L cooking oil </li>
+                    <li>Coffin </li>
+                    <li>Cooling </li>
+                    <li>Hearse & family car </li>
+                    <li>50 Copies Of Programs </li>
+                    <li>Name Plate </li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan D</h3>
                 <div class="underline"></div>
-                <p class="reg-fee"><span>R6800.00</span><br>Plan A, B & C plus the following: </p>
+                <p class="reg-fee"><span>R8800.00</span><br>Plan A, B & C plus the following: </p>
                 <ul>
-                    <li>4 Types of vegetables </li>
-                    <li>1x 12kg Sugar and flour  </li>
-                    <li>10x 500g Rama and 500g Joko Tea </li>
-                    <li>1X500G Baking Powder & 4L cooking oil </li>
+                    <li>Coffin </li>
+                    <li>Cooling </li>
+                    <li>Hearse & family car </li>
+                    <li>50 Copies Of Programs </li>
+                    <li>Name Plate </li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <ul>
+                                    <li>Four Types of Vegetables </li>
+                                    <li>Cooking oil 4L and Joko Tea 500g</li>
+                                    <li>Sugar and Flour 12.5kg</li>
+                                    <li>Rama 500g x 10 and Baking Powder 500g</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card">
-                <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
                 <h3>Plan E</h3>
                 <div class="underline"></div>
-                <p class="reg-fee"><span>R8800.00</span><br>Plan A, B, C & D plus the following: </p>
                 <ul>
-                    <li>Groceries  </li>
-                    <li>50KG Maize Meal  </li>
-                    <li>1 Bag Braai Pack (6x 2kg)  </li>
-                    <li>10kg Mala Mogodu </li>
+                    <li>Coffin </li>
+                    <li>Cooling </li>
+                    <li>Hearse & family car </li>
+                    <li>50 Copies Of Programs </li>
+                    <li>Name Plate </li>
                 </ul>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" style="font-size: medium;">Grocery List <span><i
+                                    class="fas fa-plus"></i></span></h3>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Four Types of Vegetables </li>
+                                <li>Braai Pack 6 x 2kg</li>
+                                <li>Mala and Mogodu 10kg</li>
+                                <li>Cooking oil 4L and Joko Tea 500g</li>
+                                <li>Maize Meal 50kg</li>
+                                <li>Sugar and Flour 12.5kg</li>
+                                <li>Rama 500g x 10 and Baking Powder 500g</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div>
-        <h1 class="services-hd">Flexible Funeral Payout Plans</h1>
+        <h1 class="services-hd">Flexible Funeral Payout Plan</h1>
         <div class="underline" style="margin-left: 3rem; width: 15%;"></div>
         <p class="services-p">
-            Seven People per family: R10 Charge for over-aged person
+            Covers seven people per family
             <br>
-            48 hours payout 
+            48 hours for payout
         </p>
     </div>
-    <div class="services">
+    <div class="services flexible-services">
         <div class="card">
-            <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
-            <h3>Payout plan one</h3>
+            <h3>Pay-out Plan One</h3>
             <div class="underline"></div>
-            <p class="reg-fee"><span>R50.00</span></p>
+            <p class="reg-fee"><span>R50.00</span>&nbsp;&nbsp;Monthly</p>
             <ul>
-                <li>Spouse R5000 Each. </li>
+                <li>Spouse R5000 each</li>
                 <li>0 to 6 Years R500.00</li>
                 <li>Over 6 Years to 10 Years R1000.00 </li>
                 <li>Over 10 Years to 16 Years R1200.00</li>
-                <li>Over 16 Years still at home R2000.00 </li>
+                <li>Over 16 Years and above Dependent Staying at home R2000.00 </li>
             </ul>
         </div>
         <div class="card">
-            <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
-            <h3>Payout plan two</h3>
+            <h3>Pay-out Plan Two</h3>
             <div class="underline"></div>
-            <p class="reg-fee"><span>R65.00</span> Monthly: <span>R20</span> Charge for over-aged person.             </p>
+            <p class="reg-fee"><span>R65.00</span> &nbsp;&nbsp;Monthly</p>
             <ul>
-                <li>Spouse R8000.00 Each. </li>
+                <li>Spouse R8000.00 each </li>
                 <li>0 to 6 Years R1000.00</li>
                 <li>Over 6 Years to 10 years R1200.00</li>
                 <li>Over 10 Years to 16 years R1500.00</li>
-                <li>Over 16 Years still  staying at home R2500.00 </li>
+                <li>Over 16 Years and above dependent staying at home R2500.00 </li>
             </ul>
         </div>
         <div class="card">
-            <!-- <img src="./images/mklpic.jpg" alt="Burial Services"> -->
-            <h3>Payout plan three</h3>
+            <h3>Pay-out Plan Three</h3>
             <div class="underline"></div>
-            <p class="reg-fee"> <span>R110.00</span> Monthly: <span>R30</span> Charge for over-aged person.</p>
+            <p class="reg-fee"> <span>R110.00</span> &nbsp;&nbsp;Monthly</p>
             <ul>
-                <li>Spouse R15000.00 Each. </li>
+                <li>Spouse R15000.00 each. </li>
                 <li>0 To 6 Years R1200.00</li>
                 <li>Over 6 Years To 10 years R1500.00</li>
                 <li>Over 10 Years To 16 years R2000.00</li>
-                <li>Over 16 Years still staying at home R3000.00 </li>
+                <li>Over 16 Years and above dependent staying at home R3000.00 </li>
             </ul>
         </div>
     </div>
 
-    <div class="more-info">
+    <!-- <div class="more-info">
         <div class="info-1">
             <h6>Useful info</h6>
             <p>No Cash Back. Funeral Services Only (No funeral, No benefits). <br>
-            ID Copies & Birth Certificates for beneficiaries, we qualify for only 11 Members with 3 months waiting period. <br>
-            All Plans Includes 5x 10 meters tent & 50 chairs.Children under 5 Years (No groceries, No tent, hearse & family car on request). <br>
-        </p>
+                ID Copies & Birth Certificates for beneficiaries, we qualify for only 11 Members with 3 months waiting
+                period. <br>
+                All Plans Includes 5x 10 meters tent & 50 chairs.Children under 5 Years (No groceries, No tent, hearse &
+                family car on request). <br>
+            </p>
         </div>
         <div class="info-2">
             <h6>For Individual Plans</h6>
-            <p>Please Note: Bus and catering for Main Members stand numbers only. Those who stay in the specified physical address only. Catering and Bus are for qualified parents and additional members only, some will get full funeral service without catering and bus depending on the type of the plan.
-                Buses will be booked on Wednesdays Only. From Thursday, There will be arrangements refund of R600. 00 that will be paid to beneficiary families.
-                Paying extra R50.00 will include TLB for local clients. 
+            <p>Please Note: Bus and catering for Main Members stand numbers only. Those who stay in the specified
+                physical address only. Catering and Bus are for qualified parents and additional members only, some will
+                get full funeral service without catering and bus depending on the type of the plan.
+                Buses will be booked on Wednesdays Only. From Thursday, There will be arrangements refund of R600. 00
+                that will be paid to beneficiary families.
+                Paying extra R50.00 will include TLB for local clients.
                 There is no joining fee.</p>
 
         </div>
@@ -383,13 +554,13 @@
             <h6>Documents for registration</h6>
             <p>
                 6 Months Waiting Period.
-            One Month of payment not received, claim will not be approved
-            No refunds, claims acceptable only if there is death.
-            There is no joining fee. 
+                One Month of payment not received, claim will not be approved
+                No refunds, claims acceptable only if there is death.
+                There is no joining fee.
             </p>
 
         </div>
-    </div>
+    </div> -->
 
     <footer class="footer">
         <div class="footer-container">
@@ -419,6 +590,9 @@
                     <li><a href="https://www.tiktok.com/@makolafunerals?_t=8ln7iL76TQc&_r=1" target="_blank"><i
                                 class="fab fa-tiktok"></i></a>
                     </li>
+                    <li><a href="https://twitter.com/Makolafunerals?t=5MGaLAFrUPN7wHl1ZtXAXw&s=09" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -426,9 +600,15 @@
             <p>&copy; 2024 Makola Funerals. All rights reserved.</p>
         </div>
     </footer>
-
+    
     <script src="https://kit.fontawesome.com/0dc0e0665a.js" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script>
+        function toggleNav() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
