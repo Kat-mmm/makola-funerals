@@ -7,6 +7,24 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="./images/makola-logo-removebg-preview.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @media only screen and (max-width: 768px) {
+            .save a{
+                width: 100px;
+                height: fit-content;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .save-section{
+                height: fit-content;
+                padding: 0;
+                padding-top: 1rem;
+            }
+        }
+
+    </style>
     <title>Makola Funerals</title>
 </head>
 
@@ -14,7 +32,7 @@
     <nav>
         <div class="logo">
             <a href="#home">
-                <img src="./images/makola-logo-removebg-preview.png" alt="Makola Funerals">
+                <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/i1fv7r1zdddjapaummuw" alt="Makola Funerals">
             </a>
         </div>
         <div class="nav-links">
@@ -61,7 +79,7 @@
 
     <section class="about-section" id="about">
         <div class="left-about">
-            <img src="./images/carback.jpg" alt="makola car">
+            <img data-aos="zoom-in" data-aos-duration="3000" loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/dvkql2uumg0xtqqigipk" alt="makola car">
             <div class="yellow-box">
             </div>
         </div>
@@ -78,7 +96,7 @@
                 planning ahead or need immediate assistance, we are here to help.</p>
         </div>
         <div class="small-about">
-            <img src="./images/carback.jpg" alt="makola car">
+            <img data-aos="zoom-in" data-aos-duration="3000" loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/dvkql2uumg0xtqqigipk" alt="makola car">
             <div class="yellow-box">
             </div>
         </div>
@@ -90,8 +108,8 @@
     </p>
     <div class="services">
         <section class="service-cards">
-            <div class="card">
-                <img src="./images/mklpic.jpg" alt="Burial Services">
+            <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                <img  loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/p71z3fvso4s7udtdqgje" alt="Burial Services">
                 <h3>Burial Plans</h3>
                 <div class="underline"></div>
                 <ul>
@@ -102,8 +120,8 @@
                 <a href="/services.html" class="btn">See more</a>
             </div>
 
-            <div class="card">
-                <img src="./images/mklcar.jpg" alt="Cremation Services">
+            <div class="card" data-aos="fade-left" data-aos-duration="2000">
+                <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/y34msmrzswgvmsx8ttgo" alt="Cremation Services">
                 <h3>Funeral Plans</h3>
                 <div class="underline"></div>
                 <ul>
@@ -121,12 +139,12 @@
             <div class="underline" style="width: 90%; margin: 8px;"></div>
         </div>
         <div class="gallery-image-container">
-            <img src="./images/IMG_0417.JPG" alt="">
-            <img src="./images/DSCF1241.JPG" alt="">
-            <img src="./images/DSCF1216.JPG" alt="">
-            <img src="./images/IMG_0419.JPG" alt="">
-            <img src="./images/DSCF1232.JPG" alt="">
-            <img src="./images/DSCF1225.JPG" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/t0iaeklzvrkv0p1vrvpd" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/oomy687ef4u89c5ahqfe" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/tkbobtekmwn9u0acmhgb" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/jsapftjgdmo6jkgpfjw5" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/zilp1fq5vzjgag7zx02k" alt="">
+            <img loading="lazy" src="https://res.cloudinary.com/dcdbpwlv2/image/upload/f_auto,q_auto/v1/makola%20funerals/rvoj1vzuhoefpfdmwgzg" alt="">
         </div>
     </div>
     <main>
@@ -179,6 +197,11 @@
             var navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.12.0/cloudinary-core-shrinkwrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
