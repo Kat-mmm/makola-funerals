@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    AOS.init();
     const accordionHeaders = document.querySelectorAll(".accordion-header");
 
     accordionHeaders.forEach(header => {
