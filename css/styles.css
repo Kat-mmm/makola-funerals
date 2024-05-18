@@ -850,6 +850,24 @@ textarea:focus {
     .flat-casket-info{
         height: fit-content;
     }
+
+    .gallery-image-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-image-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        /* object-fit: cover; */
+    }
+
+    *{
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
 }
 
 .small-about{
@@ -961,7 +979,27 @@ textarea:focus {
     .flat-casket-info{
         height: fit-content;
     }
+
+    .gallery-image-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-image-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        /* object-fit: cover; */
+    }
+
+    *{
+        /* border: 1px solid red; */
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
     
 }
+
+
 
 
